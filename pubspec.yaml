@@ -154,6 +154,7 @@ flutter_native_splash:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/images/tumiax-icon.png"
+  image_path: "assets/images/tumiax-icon2.png"
   adaptive_icon_background: "#0B2E4E"
-  adaptive_icon_foreground: "assets/images/tumiax-icon.png"
+  adaptive_icon_foreground: "assets/images/tumiax-icon2.png"
+  remove_alpha_ios: true
