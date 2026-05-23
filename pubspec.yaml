@@ -1,0 +1,159 @@
+name: tumiax_frontend
+description: TUMIAX - Transform physical assets into cash
+version: 1.0.2+5
+publish_to: none
+
+environment:
+  sdk: ^3.11.0
+  # flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core
+  cupertino_icons: ^1.0.8
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  
+  # State Management
+  hooks_riverpod: ^3.2.1
+  flutter_hooks: ^0.21.3+1
+  flutter_riverpod: ^3.2.1
+  # Networking
+  dio: ^5.9.1
+  retrofit: ^4.9.2
+  logger: ^2.6.2
+  
+  # Local Storage
+  shared_preferences: ^2.5.4
+  flutter_secure_storage: ^10.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Navigation
+  go_router: ^17.1.0
+  
+  # Models & Serialization
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.10.0
+  
+  # UI
+  flutter_svg: ^2.2.3
+  lottie: ^3.3.2
+  shimmer: ^3.0.0
+  cached_network_image: ^3.4.1
+  flutter_staggered_animations: ^1.1.1
+  animations: ^2.1.1
+  carousel_slider: ^5.1.2
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+  
+  # Forms
+  flutter_form_builder: ^10.3.0+1
+  form_builder_validators: ^11.3.0
+  
+  # Image Picker
+  image_picker: ^1.2.1
+  file_picker: ^10.3.10
+  
+  # Charts
+  fl_chart: ^1.1.1
+  
+  # Utils
+  equatable: ^2.0.8
+  uuid: ^4.5.2
+  url_launcher: ^6.3.2
+  package_info_plus: ^9.0.0
+  device_info_plus: ^12.3.0
+  connectivity_plus: ^7.0.0
+  
+  # Biometrics
+  local_auth: ^3.0.0
+  
+  # QR Code
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.1.4
+  dartz: ^0.10.1
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  image: ^4.8.0
+  camera: ^0.11.3+1
+
+
+  # Location
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  google_maps_flutter: ^2.14.2
+  permission_handler: ^12.0.1
+  timeago: ^3.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code Generation
+  build_runner: ^2.11.1
+  freezed: ^3.2.5
+  json_serializable: ^6.12.0
+  retrofit_generator: ^10.2.3
+ 
+  # Linting
+  flutter_lints: ^6.0.0
+  # dart_code_metrics: ^5.7.6 
+  
+  # Testing
+  mocktail: ^1.0.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/images/onboarding/
+    - assets/images/icons/
+    - assets/images/illustrations/
+    - assets/translations/
+    - assets/fonts/static/
+    - assets/fonts/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/static/Inter_18pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/static/Inter_18pt-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/static/Inter_18pt-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/static/Inter_18pt-Bold.ttf
+          weight: 700
+
+flutter_native_splash:
+  color: "#0B2E4E"
+  image: assets/images/tumiax-logo.png
+  android: true
+  ios: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/tumiax-icon.png"
+  adaptive_icon_background: "#0B2E4E"
+  adaptive_icon_foreground: "assets/images/tumiax-icon.png"
